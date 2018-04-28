@@ -89,6 +89,27 @@ nav span {
   color: white;
 }
 
+
+@media only screen and (max-width: 470px){
+  .central-headbox {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: 10rem;
+  }
+
+  .central-headbox h2 {
+    font-size: 0.77rem;
+  }
+
+  .central-headbox h3 {
+    font-size: 1rem;
+  }
+
+  .central-headbox-container {
+    height: 15rem;
+  }
+}
+
 /* Main area */
 .main-area {
   display: flex;
@@ -102,7 +123,7 @@ nav span {
 .main-area-item-container {
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 3rem;
     width: 960px;
 }
@@ -134,19 +155,6 @@ nav span {
   text-align: center;
 }
 
-/*
-<div class="lower-main-area-item-container">
-  <div class="lower-main-area-item">
-    <p>Location</p>
-    <p>-47.346436, 84.32354</p>
-  </div>
-  <div class="lower-main-area-item">
-    <p>Hours</p>
-    <p>0800-1800</p>
-  </div>
-</div>
-*/
-
 .lower-main-area-item-container {
   display: flex;
   flex-direction: row;
@@ -176,6 +184,30 @@ nav span {
   width: 100%;
 }
 
+@media only screen and (max-width: 1024px){
+  .main-area-item {
+    width: 47%;
+  }
+
+  #glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .main-area-item {
+    width: 90%;
+  }
+
+  .lower-main-area-item {
+    width: 90%;
+  }
+
+  #watch {
+    display: none;
+  }
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -194,4 +226,10 @@ footer {
 .footer-item p {
   text-align: left;
   color: white;
+}
+
+@media only screen and (max-width: 470px){
+  .footer-item p {
+    text-align: center;
+  }
 }
