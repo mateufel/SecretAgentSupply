@@ -76,17 +76,33 @@ header {
 
 /* Low header box - navigation */
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   background-color: firebrick;
   width: 100%;
-}
-
-nav span {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: white;
+}
+
+nav .standard-version {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav .mobile-version {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px){
+  nav .standard-version {
+    display: none;
+  }
+
+  nav .mobile-version {
+    display: block;
+    text-align: center;
+  }
+
 }
 
 
